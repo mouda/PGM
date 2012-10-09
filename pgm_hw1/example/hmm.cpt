@@ -1,0 +1,62 @@
+
+% dense PMFs
+0 
+
+
+% sparse PMFs
+0 
+
+
+% means
+0 
+
+
+% diagonal covariance matrices
+0 
+
+
+% dlink matrices
+0 
+
+
+% real valued N_i x M_i matrices
+0 
+
+
+% Dense CPTs
+3 
+0 
+InitialState 
+0 % number parents
+2 % cardinalities
+2.25058877032131534e-59 1.00000000000000000e+00 
+1 
+Emission 
+1 % number parents
+2 2 % cardinalities
+9.99999940233369022e-01 5.97666310031828123e-08 
+3.48122867653427944e-07 9.99999651877132356e-01 
+2 
+Transition 
+1 % number parents
+2 2 % cardinalities
+9.09090862189374960e-01 9.09091378106250125e-02 
+1.33333318275715096e-01 8.66666681724284849e-01 
+
+
+% Components
+0 
+
+
+% Mixtures of components
+0 
+
+
+% Gaussian Switching Mixtures
+0 
+
+% Logistic-Regression-based Switching Mixtures
+0 
+
+% MLP-based Switching Mixtures
+0 

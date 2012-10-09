@@ -1,0 +1,742 @@
+GRAPHICAL_MODEL prob1
+
+% The variables at below is partially completed.
+% ri_j is the label that annotator i marks task j.
+% You can add other variables by yourself.
+
+frame : 0{
+  variable : T1{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task1");
+  }
+  variable : T2{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task2");
+  }
+  variable : T3{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task3");
+  }
+  variable : T4{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task4");
+  }
+  variable : T5{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task5");
+  }
+  variable : T6{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task6");
+  }
+  variable : T7{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task7");
+  }
+  variable : T8{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task8");
+  }
+  variable : T9{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task9");
+  }
+  variable : T10{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Task10");
+  }
+  
+  variable : A1{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot1");
+  }
+  variable : A2{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot2");
+  }
+  variable : A3{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot3");
+  }
+  variable : A4{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot4");
+  }
+  variable : A5{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot5");
+  }
+  variable : A6{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot6");
+  }
+  variable : A7{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot7");
+  }
+  variable : A8{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot8");
+  }
+  variable : A9{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot9");
+  }
+  variable : A10{
+    type: discrete hidden cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("Annot10");
+  }
+
+  variable : r1_1{
+    type: discrete observed 0:0 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T1(0) using DenseCPT("Label_1_1");
+  }
+  variable : r1_2{
+    type: discrete observed 1:1 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T2(0) using DenseCPT("Label_1_2");
+  }
+  variable : r1_3{
+    type: discrete observed 2:2 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T3(0) using DenseCPT("Label_1_3");
+  }
+  variable : r1_4{
+    type: discrete observed 3:3 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T4(0) using DenseCPT("Label_1_4");
+  }
+  variable : r1_5{
+    type: discrete observed 4:4 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T5(0) using DenseCPT("Label_1_5");
+  }
+  variable : r1_6{
+    type: discrete observed 5:5 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T6(0) using DenseCPT("Label_1_6");
+  }
+  variable : r1_7{
+    type: discrete observed 6:6 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T7(0) using DenseCPT("Label_1_7");
+  }
+  variable : r1_8{
+    type: discrete observed 7:7 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T8(0) using DenseCPT("Label_1_8");
+  }
+  variable : r1_9{
+    type: discrete observed 8:8 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T9(0) using DenseCPT("Label_1_9");
+  }
+  variable : r1_10{
+    type: discrete observed 9:9 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A1(0), T10(0) using DenseCPT("Label_1_10");
+  }
+
+  variable : r2_1{
+    type: discrete observed 10:10 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T1(0) using DenseCPT("Label_2_1");
+  }
+  variable : r2_2{
+    type: discrete observed 11:11 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T2(0) using DenseCPT("Label_2_2");
+  }
+  variable : r2_3{
+    type: discrete observed 12:12 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T3(0) using DenseCPT("Label_2_3");
+  }
+  variable : r2_4{
+    type: discrete observed 13:13 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T4(0) using DenseCPT("Label_2_4");
+  }
+  variable : r2_5{
+    type: discrete observed 14:14 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T5(0) using DenseCPT("Label_2_5");
+  }
+  variable : r2_6{
+    type: discrete observed 15:15 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T6(0) using DenseCPT("Label_2_6");
+  }
+  variable : r2_7{
+    type: discrete observed 16:16 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T7(0) using DenseCPT("Label_2_7");
+  }
+  variable : r2_8{
+    type: discrete observed 17:17 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T8(0) using DenseCPT("Label_2_8");
+  }
+  variable : r2_9{
+    type: discrete observed 18:18 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T9(0) using DenseCPT("Label_2_9");
+  }
+  variable : r2_10{
+    type: discrete observed 19:19 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A2(0), T10(0) using DenseCPT("Label_2_10");
+  }
+
+  variable : r3_1{
+    type: discrete observed 20:20 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T1(0) using DenseCPT("Label_3_1");
+  }
+  variable : r3_2{
+    type: discrete observed 21:21 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T2(0) using DenseCPT("Label_3_2");
+  }
+  variable : r3_3{
+    type: discrete observed 22:22 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T3(0) using DenseCPT("Label_3_3");
+  }
+  variable : r3_4{
+    type: discrete observed 23:23 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T4(0) using DenseCPT("Label_3_4");
+  }
+  variable : r3_5{
+    type: discrete observed 24:24 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T5(0) using DenseCPT("Label_3_5");
+  }
+  variable : r3_6{
+    type: discrete observed 25:25 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T6(0) using DenseCPT("Label_3_6");
+  }
+  variable : r3_7{
+    type: discrete observed 26:26 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T7(0) using DenseCPT("Label_3_7");
+  }
+  variable : r3_8{
+    type: discrete observed 27:27 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T8(0) using DenseCPT("Label_3_8");
+  }
+  variable : r3_9{
+    type: discrete observed 28:28 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T9(0) using DenseCPT("Label_3_9");
+  }
+  variable : r3_10{
+    type: discrete observed 29:29 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A3(0), T10(0) using DenseCPT("Label_3_10");
+  }
+
+  variable : r4_1{
+    type: discrete observed 30:30 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T1(0) using DenseCPT("Label_4_1");
+  }
+  variable : r4_2{
+    type: discrete observed 31:31 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T2(0) using DenseCPT("Label_4_2");
+  }
+  variable : r4_3{
+    type: discrete observed 32:32 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T3(0) using DenseCPT("Label_4_3");
+  }
+  variable : r4_4{
+    type: discrete observed 33:33 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T4(0) using DenseCPT("Label_4_4");
+  }
+  variable : r4_5{
+    type: discrete observed 34:34 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T5(0) using DenseCPT("Label_4_5");
+  }
+  variable : r4_6{
+    type: discrete observed 35:35 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T6(0) using DenseCPT("Label_4_6");
+  }
+  variable : r4_7{
+    type: discrete observed 36:36 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T7(0) using DenseCPT("Label_4_7");
+  }
+  variable : r4_8{
+    type: discrete observed 37:37 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T8(0) using DenseCPT("Label_4_8");
+  }
+  variable : r4_9{
+    type: discrete observed 38:38 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T9(0) using DenseCPT("Label_4_9");
+  }
+  variable : r4_10{
+    type: discrete observed 39:39 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A4(0), T10(0) using DenseCPT("Label_4_10");
+  }
+
+  variable : r5_1{
+    type: discrete observed 40:40 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T1(0) using DenseCPT("Label_5_1");
+  }
+  variable : r5_2{
+    type: discrete observed 1:1 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T2(0) using DenseCPT("Label_5_2");
+  }
+  variable : r5_3{
+    type: discrete observed 42:42 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T3(0) using DenseCPT("Label_5_3");
+  }
+  variable : r5_4{
+    type: discrete observed 43:43 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T4(0) using DenseCPT("Label_5_4");
+  }
+  variable : r5_5{
+    type: discrete observed 44:44 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T5(0) using DenseCPT("Label_5_5");
+  }
+  variable : r5_6{
+    type: discrete observed 45:45 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T6(0) using DenseCPT("Label_5_6");
+  }
+  variable : r5_7{
+    type: discrete observed 46:46 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T7(0) using DenseCPT("Label_5_7");
+  }
+  variable : r5_8{
+    type: discrete observed 47:47 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T8(0) using DenseCPT("Label_5_8");
+  }
+  variable : r5_9{
+    type: discrete observed 48:48 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T9(0) using DenseCPT("Label_5_9");
+  }
+  variable : r5_10{
+    type: discrete observed 49:49 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A5(0), T10(0) using DenseCPT("Label_5_10");
+  }
+
+  variable : r6_1{
+    type: discrete observed 50:50 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T1(0) using DenseCPT("Label_6_1");
+  }
+  variable : r6_2{
+    type: discrete observed 51:51 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T2(0) using DenseCPT("Label_6_2");
+  }
+  variable : r6_3{
+    type: discrete observed 52:52 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T3(0) using DenseCPT("Label_6_3");
+  }
+  variable : r6_4{
+    type: discrete observed 53:53 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T4(0) using DenseCPT("Label_6_4");
+  }
+  variable : r6_5{
+    type: discrete observed 54:54 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T5(0) using DenseCPT("Label_6_5");
+  }
+  variable : r6_6{
+    type: discrete observed 55:55 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T6(0) using DenseCPT("Label_6_6");
+  }
+  variable : r6_7{
+    type: discrete observed 56:56 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T7(0) using DenseCPT("Label_6_7");
+  }
+  variable : r6_8{
+    type: discrete observed 57:57 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T8(0) using DenseCPT("Label_6_8");
+  }
+  variable : r6_9{
+    type: discrete observed 58:58 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T9(0) using DenseCPT("Label_6_9");
+  }
+  variable : r6_10{
+    type: discrete observed 59:59 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A6(0), T10(0) using DenseCPT("Label_6_10");
+  }
+   
+  variable : r7_1{
+    type: discrete observed 60:60 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T1(0) using DenseCPT("Label_7_1");
+  }
+  variable : r7_2{
+    type: discrete observed 61:61 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T2(0) using DenseCPT("Label_7_2");
+  }
+  variable : r7_3{
+    type: discrete observed 62:62 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T3(0) using DenseCPT("Label_7_3");
+  }
+  variable : r7_4{
+    type: discrete observed 63:63 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T4(0) using DenseCPT("Label_7_4");
+  }
+  variable : r7_5{
+    type: discrete observed 64:64 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T5(0) using DenseCPT("Label_7_5");
+  }
+  variable : r7_6{
+    type: discrete observed 65:65 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T6(0) using DenseCPT("Label_7_6");
+  }
+  variable : r7_7{
+    type: discrete observed 66:66 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T7(0) using DenseCPT("Label_7_7");
+  }
+  variable : r7_8{
+    type: discrete observed 67:67 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T8(0) using DenseCPT("Label_7_8");
+  }
+  variable : r7_9{
+    type: discrete observed 68:68 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T9(0) using DenseCPT("Label_7_9");
+  }
+  variable : r7_10{
+    type: discrete observed 69:69 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A7(0), T10(0) using DenseCPT("Label_7_10");
+  }
+  
+  variable : r8_1{
+    type: discrete observed 70:70 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T1(0) using DenseCPT("Label_8_1");
+  }
+  variable : r8_2{
+    type: discrete observed 71:71 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T2(0) using DenseCPT("Label_8_2");
+  }
+  variable : r8_3{
+    type: discrete observed 72:72 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T3(0) using DenseCPT("Label_8_3");
+  }
+  variable : r8_4{
+    type: discrete observed 73:73 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T4(0) using DenseCPT("Label_8_4");
+  }
+  variable : r8_5{
+    type: discrete observed 74:74 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T5(0) using DenseCPT("Label_8_5");
+  }
+  variable : r8_6{
+    type: discrete observed 75:75 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T6(0) using DenseCPT("Label_8_6");
+  }
+  variable : r8_7{
+    type: discrete observed 76:76 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T7(0) using DenseCPT("Label_8_7");
+  }
+  variable : r8_8{
+    type: discrete observed 77:77 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T8(0) using DenseCPT("Label_8_8");
+  }
+  variable : r8_9{
+    type: discrete observed 78:78 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T9(0) using DenseCPT("Label_8_9");
+  }
+  variable : r8_10{
+    type: discrete observed 79:79 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A8(0), T10(0) using DenseCPT("Label_8_10");
+  }
+  
+  variable : r9_1{
+    type: discrete observed 80:80 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T1(0) using DenseCPT("Label_9_1");
+  }
+  variable : r9_2{
+    type: discrete observed 81:81 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T2(0) using DenseCPT("Label_9_2");
+  }
+  variable : r9_3{
+    type: discrete observed 82:82 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T3(0) using DenseCPT("Label_9_3");
+  }
+  variable : r9_4{
+    type: discrete observed 83:83 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T4(0) using DenseCPT("Label_9_4");
+  }
+  variable : r9_5{
+    type: discrete observed 84:84 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T5(0) using DenseCPT("Label_9_5");
+  }
+  variable : r9_6{
+    type: discrete observed 85:85 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T6(0) using DenseCPT("Label_9_6");
+  }
+  variable : r9_7{
+    type: discrete observed 86:86 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T7(0) using DenseCPT("Label_9_7");
+  }
+  variable : r9_8{
+    type: discrete observed 87:87 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T8(0) using DenseCPT("Label_9_8");
+  }
+  variable : r9_9{
+    type: discrete observed 88:88 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T9(0) using DenseCPT("Label_9_9");
+  }
+  variable : r9_10{
+    type: discrete observed 89:89 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A9(0), T10(0) using DenseCPT("Label_9_10");
+  }
+  
+  variable : r10_1{
+    type: discrete observed 90:90 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T1(0) using DenseCPT("Label_10_1");
+  }
+  variable : r10_2{
+    type: discrete observed 91:91 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T2(0) using DenseCPT("Label_10_2");
+  }
+  variable : r10_3{
+    type: discrete observed 92:92 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T3(0) using DenseCPT("Label_10_3");
+  }
+  variable : r10_4{
+    type: discrete observed 93:93 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T4(0) using DenseCPT("Label_10_4");
+  }
+  variable : r10_5{
+    type: discrete observed 94:94 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T5(0) using DenseCPT("Label_10_5");
+  }
+  variable : r10_6{
+    type: discrete observed 95:95 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T6(0) using DenseCPT("Label_10_6");
+  }
+  variable : r10_7{
+    type: discrete observed 96:96 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T7(0) using DenseCPT("Label_10_7");
+  }
+  variable : r10_8{
+    type: discrete observed 97:97 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T8(0) using DenseCPT("Label_10_8");
+  }
+  variable : r10_9{
+    type: discrete observed 98:98 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T9(0) using DenseCPT("Label_10_9");
+  }
+  variable : r10_10{
+    type: discrete observed 99:99 cardinality 2;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: A10(0), T10(0) using DenseCPT("Label_10_10");
+  }
+
+}
+
+chunk 0:0

@@ -1,0 +1,31 @@
+GRAPHICAL_MODEL hmm
+
+
+frame : 0{
+  variable : state{
+    type: discrete hidden cardinality 2;
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("InitialState");
+  }
+  variable : outcome{
+    type: discrete observed 0:0 cardinality 2;
+    switchingparents: nil;
+    conditionalparents: state(0) using DenseCPT("Emission");
+  }
+}
+
+
+frame : 1{
+  variable : state{
+    type: discrete hidden cardinality 2;
+    switchingparents: nil;
+    conditionalparents: state(-1) using DenseCPT("Transition");
+  }
+  variable : outcome{
+    type: discrete observed 0:0 cardinality 2;
+    switchingparents: nil;
+    conditionalparents: state(0) using DenseCPT("Emission");
+  }
+}
+
+chunk 1:1
