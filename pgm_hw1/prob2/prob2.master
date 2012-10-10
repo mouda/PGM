@@ -1,14 +1,32 @@
-DT_N_FILE inline 2 % number of decision tree
-0 orStat 2 % index, name, number of parent
+DT_IN_FILE inline 5 % number of decision tree
+0 orStat 1 % index, name, number of parent
+-1 {p0>0 ? 0:1}
+
+1 orCount 1 % index, name, number of parent
+-1 {p0>0 ? 0:1}
+
+2 assignStat 1 % index, name, number of parent
+-1 {(p0)}
+
+3 decrease 1 % index, name, number of parent
+-1 {(p0)-1}
+
+4 resetCount 1 % index, name, number of parent
+-1 {(p0)+6}
 
 
-1 orCount
+
+DETERMINISTIC_CPT_IN_FILE inline 3 % number of decision tree
+0 StatCpt 1
+3 3  
+assignStat
+
+1 CountCpt 1
+9 9
+decrease
+
+2 Reset 1
+3 9 
+resetCount
 
 
-
-DETERMINISTIC_CPT_IN_FILE inline 2 % number of decision tree
-0 orStatCpt 2
-3 3 
-orStat
-
-1 orCountCpt
