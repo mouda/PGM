@@ -1,0 +1,14 @@
+DT_N_FILE inline 2 % number of decision tree
+0 orStat 2 % index, name, number of parent
+
+
+1 orCount
+
+
+
+DETERMINISTIC_CPT_IN_FILE inline 2 % number of decision tree
+0 orStatCpt 2
+3 3 
+orStat
+
+1 orCountCpt

@@ -12,9 +12,11 @@ frame : 0{
     conditionalparents: nil using DenseCPT("InitialState");
   }
 
-  variable : outcome{
-    type: discrete observed 0:0 cardinality 3;
+  variable : countDown{
+    type: discrete hidden cardinality 9;
     % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("InitialCountDown");
   }
 
   variable : outcome{
@@ -32,12 +34,22 @@ frame : 1{
     type: discrete hidden cardinality 3;
     % TODO
     switchingparents: nil;
-    conditionalparents: state(-1) using DenseCPT("Transition");
+    conditionalparents: state(-1), countDown(-1) using DeterministicCPT("Transition");
   }
 
-  variable : outcome{
-    type: discrete observed 0:0 cardinality 3;
+  variable : countDown{
+    type: discrete hidden cardinality 9;
     % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("InitialCountDown");
+  }
+
+	% to learn the CPT of vary lenght
+  variable : varyLength{
+    type: discrete hidden cardinality 3;
+    % TODO
+    switchingparents: nil;
+    conditionalparents: nil using DenseCPT("InitialCountDown");
   }
 
   variable : outcome{
