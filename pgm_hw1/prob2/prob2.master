@@ -9,10 +9,10 @@ DT_IN_FILE inline 5 % number of decision tree
 -1 {(p0)}
 
 3 decrease 1 % index, name, number of parent
--1 {(p0)-1}
+-1 {(p0-1)}
 
 4 resetCount 1 % index, name, number of parent
--1 {(p0)+6}
+-1 {(p0+6)}
 
 
 
