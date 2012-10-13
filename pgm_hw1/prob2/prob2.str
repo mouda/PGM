@@ -20,7 +20,7 @@ frame : 0{
   }
 
   variable : countDown{
-    type: discrete hidden cardinality 9;
+    type: discrete hidden cardinality 8;
     % TODO
     switchingparents: nil;
     conditionalparents: varyLength(0) using DenseCPT("InitialCountDown");
@@ -51,12 +51,15 @@ frame : 1{
   variable : varyLength{
     type: discrete hidden cardinality 3;
     % TODO
-    switchingparents: nil;
-    conditionalparents: state(0) using DenseCPT("Transition");
+    switchingparents: countDown(-1)
+	using mapping("orVary");
+    conditionalparents: 
+	varyLength(-1) using DeterministicCPT("StatCpt") | 
+	varyLength(-1) using DenseCPT("Length");
   }
 
   variable : countDown{
-    type: discrete hidden cardinality 9;
+    type: discrete hidden cardinality 8;
     % TODO
     switchingparents: countDown(-1)
 	using mapping("orCount");

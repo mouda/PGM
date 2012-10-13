@@ -3,17 +3,17 @@
 === Clique Information ===
 Number of cliques = 1
 == Clique number: 0, root/right-interface clique, root/right-interface clique, leaf
-Clique information: 16 packed bits, 1 unsigned words (0 splits), weight = 2.862728, jt_weight = 1.000000
-7 Nodes: state(0)[3],varyLength(0)[3],countDown(0)[9],outcome(0)[3],state(1)[3],varyLength(1)[3],countDown(1)[9]
+Clique information: 14 packed bits, 1 unsigned words (0 splits), weight = 2.811575, jt_weight = 1.000000
+7 Nodes: state(0)[3],varyLength(0)[3],countDown(0)[8],outcome(0)[3],state(1)[3],varyLength(1)[3],countDown(1)[8]
 7 Assigned: state(0),varyLength(0),countDown(0),outcome(0),state(1),varyLength(1),countDown(1)
-7 Assigned Sorted: state(0)[3],outcome(0)[3],varyLength(0)[3],countDown(0)[9],state(1)[3],varyLength(1)[3],countDown(1)[9]
+7 Assigned Sorted: state(0)[3],outcome(0)[3],varyLength(0)[3],countDown(0)[8],varyLength(1)[3],countDown(1)[8],state(1)[3]
 7 Dispositions: 0 0 0 0 0 0 0
 7 Assigned Prob: state(0),varyLength(0),countDown(0),outcome(0),state(1),varyLength(1),countDown(1)
 0 Cum Assigned Prob: 
 0 Union Incomming Seps: 
 0 Unassigned Iterated: 
 0 Cumulative Unassigned: 
-6 Hidden/Hashable: state(0)[3],varyLength(0)[3],countDown(0)[9],state(1)[3],varyLength(1)[3],countDown(1)[9]
+6 Hidden/Hashable: state(0)[3],varyLength(0)[3],countDown(0)[8],state(1)[3],varyLength(1)[3],countDown(1)[8]
 0 Clique Neighbors: 
 0 Clique Children: 
 0 Receive Seps: 
@@ -29,17 +29,17 @@ Number of separators = 0
 === Clique Information ===
 Number of cliques = 1
 == Clique number: 0, root/right-interface clique, root/right-interface clique, leaf/left-interface clique
-Clique information: 14 packed bits, 1 unsigned words (0 splits), weight = 2.385606, jt_weight = 1.000000
-6 Nodes: state(1)[3],countDown(1)[9],outcome(1)[3],state(2)[3],varyLength(2)[3],countDown(2)[9]
+Clique information: 14 packed bits, 1 unsigned words (0 splits), weight = 2.811575, jt_weight = 1.000000
+7 Nodes: state(1)[3],varyLength(1)[3],countDown(1)[8],outcome(1)[3],state(2)[3],varyLength(2)[3],countDown(2)[8]
 4 Assigned: outcome(1),state(2),varyLength(2),countDown(2)
-4 Assigned Sorted: outcome(1)[3],state(2)[3],varyLength(2)[3],countDown(2)[9]
+4 Assigned Sorted: outcome(1)[3],varyLength(2)[3],countDown(2)[8],state(2)[3]
 4 Dispositions: 0 0 0 0
 4 Assigned Prob: outcome(1),state(2),varyLength(2),countDown(2)
 7 Cum Assigned Prob: state(0),varyLength(0),countDown(0),outcome(0),state(1),varyLength(1),countDown(1)
-2 Union Incomming Seps: state(1),countDown(1)
+3 Union Incomming Seps: state(1),varyLength(1),countDown(1)
 0 Unassigned Iterated: 
 0 Cumulative Unassigned: 
-5 Hidden/Hashable: state(1)[3],countDown(1)[9],state(2)[3],varyLength(2)[3],countDown(2)[9]
+6 Hidden/Hashable: state(1)[3],varyLength(1)[3],countDown(1)[8],state(2)[3],varyLength(2)[3],countDown(2)[8]
 0 Clique Neighbors: 
 0 Clique Children: 
 1 Receive Seps: 0,
@@ -49,12 +49,12 @@ Send Sep: -1
 === Separator Information ===
 Number of separators = 1
 == Separator number: 0
-Separator information: 0 acc packed bits (0 words, 0 splits), 6 rem packed bits (1 words, 0 splits)
-2 Nodes: state(1)[3],countDown(1)[9]
+Separator information: 0 acc packed bits (0 words, 0 splits), 7 rem packed bits (1 words, 0 splits)
+3 Nodes: state(1)[3],varyLength(1)[3],countDown(1)[8]
 0 Acc Inter: 
 0 Hid Acc Inter: 
-2 remainder: state(1),countDown(1)
-2 hRemainder: state(1),countDown(1)
+3 remainder: state(1),varyLength(1),countDown(1)
+3 hRemainder: state(1),varyLength(1),countDown(1)
 
 
 ===============================
@@ -62,17 +62,17 @@ Separator information: 0 acc packed bits (0 words, 0 splits), 6 rem packed bits 
 === Clique Information ===
 Number of cliques = 1
 == Clique number: 0, root/right-interface clique, root clique, leaf/left-interface clique
-Clique information: 6 packed bits, 1 unsigned words (0 splits), weight = 1.431364, jt_weight = 1.000000
-3 Nodes: state(2)[3],countDown(2)[9],outcome(2)[3]
+Clique information: 7 packed bits, 1 unsigned words (0 splits), weight = 1.857332, jt_weight = 1.000000
+4 Nodes: state(2)[3],varyLength(2)[3],countDown(2)[8],outcome(2)[3]
 1 Assigned: outcome(2)
 1 Assigned Sorted: outcome(2)[3]
 1 Dispositions: 0
 1 Assigned Prob: outcome(2)
 11 Cum Assigned Prob: state(0),varyLength(0),countDown(0),outcome(0),state(1),varyLength(1),countDown(1),outcome(1),state(2),varyLength(2),countDown(2)
-2 Union Incomming Seps: state(2),countDown(2)
+3 Union Incomming Seps: state(2),varyLength(2),countDown(2)
 0 Unassigned Iterated: 
 0 Cumulative Unassigned: 
-2 Hidden/Hashable: state(2)[3],countDown(2)[9]
+3 Hidden/Hashable: state(2)[3],varyLength(2)[3],countDown(2)[8]
 0 Clique Neighbors: 
 0 Clique Children: 
 1 Receive Seps: 0,
@@ -82,12 +82,12 @@ Send Sep: -1
 === Separator Information ===
 Number of separators = 1
 == Separator number: 0
-Separator information: 0 acc packed bits (0 words, 0 splits), 6 rem packed bits (1 words, 0 splits)
-2 Nodes: state(2)[3],countDown(2)[9]
+Separator information: 0 acc packed bits (0 words, 0 splits), 7 rem packed bits (1 words, 0 splits)
+3 Nodes: state(2)[3],varyLength(2)[3],countDown(2)[8]
 0 Acc Inter: 
 0 Hid Acc Inter: 
-2 remainder: state(2),countDown(2)
-2 hRemainder: state(2),countDown(2)
+3 remainder: state(2),varyLength(2),countDown(2)
+3 hRemainder: state(2),varyLength(2),countDown(2)
 
 
 ===============================
